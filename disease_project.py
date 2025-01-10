@@ -6,9 +6,9 @@ import numpy as np
 from numpy import dtype
 from altair.theme import options
 
-modelk=pickle.load(open("E:\Project1\kidney.pkl","rb"))
-modelp=pickle.load(open("E:\Project1\parkinsons.pkl","rb"))
-modell=pickle.load(open("E:\Project1\liver.pkl","rb"))
+modelk=pickle.load(open("kidney.pkl","rb"))
+modelp=pickle.load(open("parkinsons.pkl","rb"))
+modell=pickle.load(open("liver.pkl","rb"))
 def BMI_page():
     st.subheader("But first, let's find your BMI")
     weight = st.number_input("Enter your weight (kg)", min_value=0.0)  
