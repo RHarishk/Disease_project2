@@ -182,6 +182,7 @@ css = """
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Arial', sans-serif;
+    color:Black; /* set color to black */
 }
 </style>
 """
