@@ -174,38 +174,10 @@ def liver():
     except ValueError or TypeError:
         st.error("Please enter valid data")
 
-#css = """
-#<style>
-#.stApp {
-#    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210923/pngtree-health-care-gradient-blue-theme-light-effect-background-image_904155.png");
-#    background-size: cover;
-#    background-repeat: no-repeat;
-#    background-attachment: fixed;
-#}
-#</style>
-#"""
-#st.markdown(css, unsafe_allow_html=True)
-#st.title("Predict Your Health Condition")
-#colored_header(
-#        label="select which dieases you want to predict",
-#        description=None,
-#        color_name="violet-70",
-#    )
-#home=button_selector(["Chronic kidney disease","Parkinsons","Liver"],spec=3)
-#if home==0:
-#    kidney()
-#elif home==1:
-#    parkinsons()
-#else:
-#    liver()
-#
-
-
-# Set up background and title
 css = """
 <style>
 .stApp {
-    background-image: url("https://img.freepik.com/free-vector/blue-medical-banner-healthcare-design_1017-37013.jpg?t=st=1736589427~exp=1736593027~hmac=f12431ef6d86485785a25210f2da33f0966b88c8bd9ba1c85baa858f998762f5&w=1380");
+    background-image:"blue-medical-banner-healthcare-design_1017-37013");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
