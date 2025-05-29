@@ -244,9 +244,9 @@ st.markdown("""
 selected_option = st.selectbox("Choose a disease:", ["Chronic Kidney Disease", "Parkinson's Disease", "Liver Disease"])
 
 # Navigate to the selected page
-if selected_option == 0:
+if selected_option == "Chronic Kidney Disease":
     kidney()
-elif selected_option == 1:
+elif selected_option ==  "Parkinson's Disease":
     parkinsons()
-elif selected_option == 2:
+elif selected_option ==  "Liver Disease":
     liver()
