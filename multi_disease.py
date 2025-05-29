@@ -1,7 +1,6 @@
 import streamlit as st
 import pickle
 import numpy as np
-from streamlit_extras.colored_header import colored_header
 from streamlit_extras.button_selector import button_selector
 
 def load_model(model_path):
@@ -225,11 +224,7 @@ Select a disease from the options below to proceed with the prediction.
 """)
 
 # Features Overview
-colored_header(
-    label="Features of the Application",
-    description="",
-    color_name="violet-70"
-)
+
 
 st.markdown("""
 - **Chronic Kidney Disease Prediction**: Input your health parameters to check if you're at risk of kidney disease.
