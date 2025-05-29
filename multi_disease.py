@@ -1,7 +1,6 @@
 import streamlit as st
 import pickle
 import numpy as np
-from streamlit_extras.button_selector import button_selector
 
 def load_model(model_path):
     with open(model_path, 'rb') as file:
@@ -241,13 +240,8 @@ st.markdown("""
 """)
 
 # Button Selector for Navigation
-from streamlit_extras.button_selector import button_selector
 
-selected_option = button_selector(
-    options=["Chronic Kidney Disease", "Parkinson's Disease", "Liver Disease"],
-    key="home_selector",
-    spec=3
-)
+selected_option = st.selectbox("Choose a disease:", ["Chronic Kidney Disease", "Parkinson's Disease", "Liver Disease"])
 
 # Navigate to the selected page
 if selected_option == 0:
