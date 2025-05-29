@@ -1,3 +1,4 @@
 streamlit
 numpy
-streamlit-extras
+streamlit_extras.colored_header
+streamlit_extras.button_selector
